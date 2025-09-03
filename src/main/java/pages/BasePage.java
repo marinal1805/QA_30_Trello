@@ -40,7 +40,7 @@ public class BasePage {
         }
     }
 
-    public boolean vallidateUrl(String  fraction){
+    public boolean validateUrl(String  fraction){
         return new WebDriverWait(driver, Duration.ofSeconds(10))
                 .until((ExpectedConditions.urlContains(fraction)));
     }

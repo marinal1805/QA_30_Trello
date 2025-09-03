@@ -17,7 +17,7 @@ public class LoginTest extends AppManager {
         HomePage homePage = new HomePage(getDriver());
         homePage.clickBtnLogin();
         new LoginPage(getDriver()).login(user);
-        Assert.assertTrue(new BoardsPage(getDriver()).vallidateUrl("boards"));
+        Assert.assertTrue(new BoardsPage(getDriver()).validateUrl("boards"));
     }
 
 }
