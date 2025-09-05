@@ -36,5 +36,4 @@ public class DeleteBoardsTests extends AppManager {
 
     }
 
-
 }
