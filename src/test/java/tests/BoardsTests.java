@@ -30,7 +30,7 @@ public class BoardsTests extends AppManager {
     @Test(dataProvider ="dataProviderBoards", dataProviderClass = BoardDP.class)
     public void createNewBoardPositiveTest_FromDP(Board board) {
         new BoardsPage(getDriver()).createNewBoard(board);
-
+       // new BoardsPage(getDriver()).clickBtnCreateNewBoardSubmit();
     }
 
 }

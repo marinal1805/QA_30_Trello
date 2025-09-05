@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bdb657dc-dfef-49b2-a28d-d53463073890" name="Changes" comment="start">
-      <change afterPath="$PROJECT_DIR$/src/main/java/data_providers/BoardDP.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/MyBoardPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data_provaider/boards.csv" afterDir="false" />
+    <list default="true" id="bdb657dc-dfef-49b2-a28d-d53463073890" name="Changes" comment="3 different pages for boardTests_fromDP">
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/DeleteBoardsTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/BoardsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BoardsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/MyBoardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/MyBoardPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/BoardsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BoardsTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,18 +42,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.BoardsTests.createNewBoardPositiveTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.BoardsTests.createNewBoardPositiveTest_FromDP.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.BoardsTests.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.LoginTest.loginPositiveTest.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.BoardsTests.createNewBoardPositiveTest.executor": "Run",
+    "Gradle.BoardsTests.createNewBoardPositiveTest_FromDP.executor": "Run",
+    "Gradle.BoardsTests.executor": "Run",
+    "Gradle.DeleteBoardsTests.deleteBoardPositiveTest.executor": "Run",
+    "Gradle.LoginTest.loginPositiveTest.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/data_provaider" />
@@ -67,7 +69,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.BoardsTests.createNewBoardPositiveTest_FromDP">
+  <component name="RunManager" selected="Gradle.DeleteBoardsTests.deleteBoardPositiveTest">
     <configuration name="BoardsTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -140,6 +142,30 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="DeleteBoardsTests.deleteBoardPositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tests.DeleteBoardsTests.deleteBoardPositiveTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="LoginTest.loginPositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -166,9 +192,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.DeleteBoardsTests.deleteBoardPositiveTest" />
+        <item itemvalue="Gradle.BoardsTests.createNewBoardPositiveTest" />
         <item itemvalue="Gradle.BoardsTests.createNewBoardPositiveTest_FromDP" />
         <item itemvalue="Gradle.BoardsTests" />
-        <item itemvalue="Gradle.BoardsTests.createNewBoardPositiveTest" />
         <item itemvalue="Gradle.LoginTest.loginPositiveTest" />
       </list>
     </recent_temporary>
@@ -197,11 +224,20 @@
       <option name="project" value="LOCAL" />
       <updated>1756822908997</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="3 different pages for boardTests_fromDP">
+      <option name="closed" value="true" />
+      <created>1756914852855</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1756914852855</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="start" />
-    <option name="LAST_COMMIT_MESSAGE" value="start" />
+    <MESSAGE value="3 different pages for boardTests_fromDP" />
+    <option name="LAST_COMMIT_MESSAGE" value="3 different pages for boardTests_fromDP" />
   </component>
 </project>

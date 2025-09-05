@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 
-public class MyBoardPage extends BasePage{
+public class MyBoardPage extends BasePage {
 
     public MyBoardPage(WebDriver driver) {
         setDriver(driver);
@@ -36,17 +36,15 @@ public class MyBoardPage extends BasePage{
         return validateTextInElementWait(boardName, text, time);
     }
 
-    public void deleteBoard(){
-        clickWait(btnDots,5);
-        clickWait(btnCloseBoard,5);
-    clickWait(btnCloseBoardConfirm,5);
-    pause(5);
-    btnDots.click();
-    clickWait(btnDeleteBoard,5);
-    clickWait(btnDeleteBoardConfirm,5);
-
+    public void deleteBoard() {
+        clickWait(btnDots, 5);
+        clickWait(btnCloseBoard, 5);
+        clickWait(btnCloseBoardConfirm, 5);
+        pause(5);
+        btnDots.click();
+        clickWait(btnDeleteBoard, 5);
+        clickWait(btnDeleteBoardConfirm, 5);
 
     }
-
 
 }
